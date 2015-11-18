@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790AB9DF19F6590E00F1BBEB /* sound-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790AB9DA19F6590E00F1BBEB /* sound-1.mp3 */; };
+		790AB9E019F6590E00F1BBEB /* sound-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790AB9DB19F6590E00F1BBEB /* sound-2.mp3 */; };
+		790AB9E119F6590E00F1BBEB /* sound-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790AB9DC19F6590E00F1BBEB /* sound-3.mp3 */; };
+		790AB9E219F6590E00F1BBEB /* sound-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790AB9DD19F6590E00F1BBEB /* sound-4.mp3 */; };
+		790AB9E319F6590E00F1BBEB /* sound-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790AB9DE19F6590E00F1BBEB /* sound-5.mp3 */; };
+		79147F0019D1A8AA00E31B1D /* AlgebraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79147EFF19D1A8AA00E31B1D /* AlgebraViewController.swift */; };
+		791CC5F319C8316B009AAE9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CC5F219C8316B009AAE9B /* AppDelegate.swift */; };
+		791CC5F519C8316B009AAE9B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CC5F419C8316B009AAE9B /* MainViewController.swift */; };
+		791CC5F819C8316B009AAE9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791CC5F619C8316B009AAE9B /* Main.storyboard */; };
+		791CC5FA19C8316B009AAE9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791CC5F919C8316B009AAE9B /* Images.xcassets */; };
+		791CC5FD19C8316B009AAE9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791CC5FB19C8316B009AAE9B /* LaunchScreen.xib */; };
+		791CC60919C8316B009AAE9B /* Math_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CC60819C8316B009AAE9B /* Math_GameTests.swift */; };
+		791CC61319C83443009AAE9B /* FractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CC61219C83443009AAE9B /* FractionViewController.swift */; };
+		791CC61519C84F25009AAE9B /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791CC61419C84F25009AAE9B /* CustomKeyboard.xib */; };
+		791CC61719C85023009AAE9B /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CC61619C85023009AAE9B /* CustomKeyboard.swift */; };
+		793005AE1A10A00100BD9A3E /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793005AD1A10A00100BD9A3E /* AppSettingsViewController.swift */; };
+		7939110919CA9BF700F55520 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939110819CA9BF700F55520 /* AppUtil.swift */; };
+		7939110B19CA9FDF00F55520 /* LongCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939110A19CA9FDF00F55520 /* LongCalcViewController.swift */; };
+		793B4E0419E3F5400089A344 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793B4E0319E3F5400089A344 /* RulerViewController.swift */; };
+		793C7FCB19F3EDDE00D63C75 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C7FCA19F3EDDE00D63C75 /* AppConstants.swift */; };
+		7944A89D1A47E535008E6DCC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7944A89C1A47E535008E6DCC /* ContactViewController.swift */; };
+		7946E68219F9F11300DC223A /* do.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E67B19F9F11300DC223A /* do.mp3 */; };
+		7946E68319F9F11300DC223A /* fa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E67C19F9F11300DC223A /* fa.mp3 */; };
+		7946E68419F9F11300DC223A /* la.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E67D19F9F11300DC223A /* la.mp3 */; };
+		7946E68519F9F11300DC223A /* mi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E67E19F9F11300DC223A /* mi.mp3 */; };
+		7946E68619F9F11300DC223A /* re.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E67F19F9F11300DC223A /* re.mp3 */; };
+		7946E68719F9F11300DC223A /* so.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E68019F9F11300DC223A /* so.mp3 */; };
+		7946E68819F9F11300DC223A /* ti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7946E68119F9F11300DC223A /* ti.mp3 */; };
+		798F9A4C19DEBDF400B401CF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F9A4B19DEBDF400B401CF /* SettingsViewController.swift */; };
+		79A6694F1A8622E700403D77 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6694E1A8622E700403D77 /* HelpViewController.swift */; };
+		79AF3CAE19DE9CAC00DAA103 /* FractionQuestions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79AF3CAD19DE9CAC00DAA103 /* FractionQuestions.plist */; };
+		79B664C41AB4251000F4F3F0 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B664C31AB4251000F4F3F0 /* TutorialViewController.swift */; };
+		79B8787019F221F20097AF05 /* RulerQuestions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B8786F19F221F20097AF05 /* RulerQuestions.plist */; };
+		79E079DB19CD7CC7006FF862 /* AddSubtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E079D919CD7CC7006FF862 /* AddSubtractViewController.swift */; };
+		79E079DC19CD7CC7006FF862 /* AddSubtractViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E079DA19CD7CC7006FF862 /* AddSubtractViewController.xib */; };
+		79E079DF19CD8022006FF862 /* MultiplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E079DD19CD8022006FF862 /* MultiplyViewController.swift */; };
+		79E079E019CD8022006FF862 /* MultiplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E079DE19CD8022006FF862 /* MultiplyViewController.xib */; };
+		79E079E319CD8034006FF862 /* DivideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E079E119CD8034006FF862 /* DivideViewController.swift */; };
+		79E079E419CD8034006FF862 /* DivideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E079E219CD8034006FF862 /* DivideViewController.xib */; };
+		79E9C1581A14B7B900AD53CA /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79E9C1571A14B7B900AD53CA /* wrong.mp3 */; };
+		79EC043219DFC061001465B2 /* LongCalcQuestions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79EC043119DFC061001465B2 /* LongCalcQuestions.plist */; };
+		79EC043419DFDA80001465B2 /* AlgebraQuestions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79EC043319DFDA80001465B2 /* AlgebraQuestions.plist */; };
+		79F0E8BC1A09D3F9008AE8C0 /* hooray.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79F0E8BB1A09D3F9008AE8C0 /* hooray.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		791CC60319C8316B009AAE9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 791CC5E519C8316A009AAE9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791CC5EC19C8316A009AAE9B;
+			remoteInfo = "Math Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		790AB9DA19F6590E00F1BBEB /* sound-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-1.mp3"; path = "Sounds/sound-1.mp3"; sourceTree = "<group>"; };
+		790AB9DB19F6590E00F1BBEB /* sound-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-2.mp3"; path = "Sounds/sound-2.mp3"; sourceTree = "<group>"; };
+		790AB9DC19F6590E00F1BBEB /* sound-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-3.mp3"; path = "Sounds/sound-3.mp3"; sourceTree = "<group>"; };
+		790AB9DD19F6590E00F1BBEB /* sound-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-4.mp3"; path = "Sounds/sound-4.mp3"; sourceTree = "<group>"; };
+		790AB9DE19F6590E00F1BBEB /* sound-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-5.mp3"; path = "Sounds/sound-5.mp3"; sourceTree = "<group>"; };
+		79147EFF19D1A8AA00E31B1D /* AlgebraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgebraViewController.swift; sourceTree = "<group>"; };
+		791CC5ED19C8316A009AAE9B /* Math Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		791CC5F119C8316B009AAE9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		791CC5F219C8316B009AAE9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		791CC5F419C8316B009AAE9B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		791CC5F719C8316B009AAE9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		791CC5F919C8316B009AAE9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		791CC5FC19C8316B009AAE9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		791CC60219C8316B009AAE9B /* Math GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		791CC60719C8316B009AAE9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		791CC60819C8316B009AAE9B /* Math_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_GameTests.swift; sourceTree = "<group>"; };
+		791CC61219C83443009AAE9B /* FractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FractionViewController.swift; sourceTree = "<group>"; };
+		791CC61419C84F25009AAE9B /* CustomKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
+		791CC61619C85023009AAE9B /* CustomKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		793005AD1A10A00100BD9A3E /* AppSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
+		7939110819CA9BF700F55520 /* AppUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		7939110A19CA9FDF00F55520 /* LongCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongCalcViewController.swift; sourceTree = "<group>"; };
+		793B4E0319E3F5400089A344 /* RulerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
+		793C7FCA19F3EDDE00D63C75 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		7944A89C1A47E535008E6DCC /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7946E67B19F9F11300DC223A /* do.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = do.mp3; path = Sounds/do.mp3; sourceTree = "<group>"; };
+		7946E67C19F9F11300DC223A /* fa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fa.mp3; path = Sounds/fa.mp3; sourceTree = "<group>"; };
+		7946E67D19F9F11300DC223A /* la.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = la.mp3; path = Sounds/la.mp3; sourceTree = "<group>"; };
+		7946E67E19F9F11300DC223A /* mi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mi.mp3; path = Sounds/mi.mp3; sourceTree = "<group>"; };
+		7946E67F19F9F11300DC223A /* re.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = re.mp3; path = Sounds/re.mp3; sourceTree = "<group>"; };
+		7946E68019F9F11300DC223A /* so.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = so.mp3; path = Sounds/so.mp3; sourceTree = "<group>"; };
+		7946E68119F9F11300DC223A /* ti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ti.mp3; path = Sounds/ti.mp3; sourceTree = "<group>"; };
+		798F9A4B19DEBDF400B401CF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		79A6694E1A8622E700403D77 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		79AF3CAD19DE9CAC00DAA103 /* FractionQuestions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FractionQuestions.plist; path = "Custom Questions/FractionQuestions.plist"; sourceTree = "<group>"; };
+		79B664C31AB4251000F4F3F0 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		79B8786F19F221F20097AF05 /* RulerQuestions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = RulerQuestions.plist; path = "Custom Questions/RulerQuestions.plist"; sourceTree = "<group>"; };
+		79E079D919CD7CC7006FF862 /* AddSubtractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubtractViewController.swift; sourceTree = "<group>"; };
+		79E079DA19CD7CC7006FF862 /* AddSubtractViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddSubtractViewController.xib; sourceTree = "<group>"; };
+		79E079DD19CD8022006FF862 /* MultiplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplyViewController.swift; sourceTree = "<group>"; };
+		79E079DE19CD8022006FF862 /* MultiplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiplyViewController.xib; sourceTree = "<group>"; };
+		79E079E119CD8034006FF862 /* DivideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivideViewController.swift; sourceTree = "<group>"; };
+		79E079E219CD8034006FF862 /* DivideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DivideViewController.xib; sourceTree = "<group>"; };
+		79E9C1571A14B7B900AD53CA /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrong.mp3; path = Sounds/wrong.mp3; sourceTree = "<group>"; };
+		79EC043119DFC061001465B2 /* LongCalcQuestions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LongCalcQuestions.plist; path = "Custom Questions/LongCalcQuestions.plist"; sourceTree = "<group>"; };
+		79EC043319DFDA80001465B2 /* AlgebraQuestions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AlgebraQuestions.plist; path = "Custom Questions/AlgebraQuestions.plist"; sourceTree = "<group>"; };
+		79F0E8BB1A09D3F9008AE8C0 /* hooray.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hooray.mp3; path = Sounds/hooray.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		791CC5EA19C8316A009AAE9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		791CC5FF19C8316B009AAE9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		790AB9D919F658CE00F1BBEB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				790AB9DA19F6590E00F1BBEB /* sound-1.mp3 */,
+				790AB9DB19F6590E00F1BBEB /* sound-2.mp3 */,
+				790AB9DC19F6590E00F1BBEB /* sound-3.mp3 */,
+				790AB9DD19F6590E00F1BBEB /* sound-4.mp3 */,
+				790AB9DE19F6590E00F1BBEB /* sound-5.mp3 */,
+				7946E67B19F9F11300DC223A /* do.mp3 */,
+				7946E67F19F9F11300DC223A /* re.mp3 */,
+				7946E67E19F9F11300DC223A /* mi.mp3 */,
+				7946E67C19F9F11300DC223A /* fa.mp3 */,
+				7946E68019F9F11300DC223A /* so.mp3 */,
+				7946E67D19F9F11300DC223A /* la.mp3 */,
+				7946E68119F9F11300DC223A /* ti.mp3 */,
+				79F0E8BB1A09D3F9008AE8C0 /* hooray.mp3 */,
+				79E9C1571A14B7B900AD53CA /* wrong.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		791CC5E419C8316A009AAE9B = {
+			isa = PBXGroup;
+			children = (
+				791CC5EF19C8316A009AAE9B /* Math Game */,
+				791CC60519C8316B009AAE9B /* Math GameTests */,
+				791CC5EE19C8316A009AAE9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		791CC5EE19C8316A009AAE9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				791CC5ED19C8316A009AAE9B /* Math Game.app */,
+				791CC60219C8316B009AAE9B /* Math GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		791CC5EF19C8316A009AAE9B /* Math Game */ = {
+			isa = PBXGroup;
+			children = (
+				791CC5F219C8316B009AAE9B /* AppDelegate.swift */,
+				791CC5F619C8316B009AAE9B /* Main.storyboard */,
+				791CC5F419C8316B009AAE9B /* MainViewController.swift */,
+				791CC61219C83443009AAE9B /* FractionViewController.swift */,
+				798F90F119CE86810093D99A /* LongCalc */,
+				793B4E0319E3F5400089A344 /* RulerViewController.swift */,
+				79147EFF19D1A8AA00E31B1D /* AlgebraViewController.swift */,
+				798F9A4B19DEBDF400B401CF /* SettingsViewController.swift */,
+				793005AD1A10A00100BD9A3E /* AppSettingsViewController.swift */,
+				79A6694E1A8622E700403D77 /* HelpViewController.swift */,
+				79B664C31AB4251000F4F3F0 /* TutorialViewController.swift */,
+				7944A89C1A47E535008E6DCC /* ContactViewController.swift */,
+				793C7FCA19F3EDDE00D63C75 /* AppConstants.swift */,
+				7939110819CA9BF700F55520 /* AppUtil.swift */,
+				791CC61619C85023009AAE9B /* CustomKeyboard.swift */,
+				791CC61419C84F25009AAE9B /* CustomKeyboard.xib */,
+				791CC5F919C8316B009AAE9B /* Images.xcassets */,
+				791CC5FB19C8316B009AAE9B /* LaunchScreen.xib */,
+				790AB9D919F658CE00F1BBEB /* Sounds */,
+				79AF3CAC19DE9C5D00DAA103 /* Custom Questions */,
+				791CC5F019C8316B009AAE9B /* Supporting Files */,
+			);
+			path = "Math Game";
+			sourceTree = "<group>";
+		};
+		791CC5F019C8316B009AAE9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				791CC5F119C8316B009AAE9B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		791CC60519C8316B009AAE9B /* Math GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				791CC60819C8316B009AAE9B /* Math_GameTests.swift */,
+				791CC60619C8316B009AAE9B /* Supporting Files */,
+			);
+			path = "Math GameTests";
+			sourceTree = "<group>";
+		};
+		791CC60619C8316B009AAE9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				791CC60719C8316B009AAE9B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		798F90F119CE86810093D99A /* LongCalc */ = {
+			isa = PBXGroup;
+			children = (
+				7939110A19CA9FDF00F55520 /* LongCalcViewController.swift */,
+				79E079D919CD7CC7006FF862 /* AddSubtractViewController.swift */,
+				79E079DA19CD7CC7006FF862 /* AddSubtractViewController.xib */,
+				79E079DD19CD8022006FF862 /* MultiplyViewController.swift */,
+				79E079DE19CD8022006FF862 /* MultiplyViewController.xib */,
+				79E079E119CD8034006FF862 /* DivideViewController.swift */,
+				79E079E219CD8034006FF862 /* DivideViewController.xib */,
+			);
+			name = LongCalc;
+			sourceTree = "<group>";
+		};
+		79AF3CAC19DE9C5D00DAA103 /* Custom Questions */ = {
+			isa = PBXGroup;
+			children = (
+				79AF3CAD19DE9CAC00DAA103 /* FractionQuestions.plist */,
+				79EC043119DFC061001465B2 /* LongCalcQuestions.plist */,
+				79B8786F19F221F20097AF05 /* RulerQuestions.plist */,
+				79EC043319DFDA80001465B2 /* AlgebraQuestions.plist */,
+			);
+			name = "Custom Questions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		791CC5EC19C8316A009AAE9B /* Math Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 791CC60C19C8316B009AAE9B /* Build configuration list for PBXNativeTarget "Math Game" */;
+			buildPhases = (
+				791CC5E919C8316A009AAE9B /* Sources */,
+				791CC5EA19C8316A009AAE9B /* Frameworks */,
+				791CC5EB19C8316A009AAE9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Math Game";
+			productName = "Math Game";
+			productReference = 791CC5ED19C8316A009AAE9B /* Math Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		791CC60119C8316B009AAE9B /* Math GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 791CC60F19C8316B009AAE9B /* Build configuration list for PBXNativeTarget "Math GameTests" */;
+			buildPhases = (
+				791CC5FE19C8316B009AAE9B /* Sources */,
+				791CC5FF19C8316B009AAE9B /* Frameworks */,
+				791CC60019C8316B009AAE9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				791CC60419C8316B009AAE9B /* PBXTargetDependency */,
+			);
+			name = "Math GameTests";
+			productName = "Math GameTests";
+			productReference = 791CC60219C8316B009AAE9B /* Math GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		791CC5E519C8316A009AAE9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = OEM;
+				TargetAttributes = {
+					791CC5EC19C8316A009AAE9B = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 62D34P2E98;
+					};
+					791CC60119C8316B009AAE9B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 791CC5EC19C8316A009AAE9B;
+					};
+				};
+			};
+			buildConfigurationList = 791CC5E819C8316A009AAE9B /* Build configuration list for PBXProject "Math Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 791CC5E419C8316A009AAE9B;
+			productRefGroup = 791CC5EE19C8316A009AAE9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				791CC5EC19C8316A009AAE9B /* Math Game */,
+				791CC60119C8316B009AAE9B /* Math GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		791CC5EB19C8316A009AAE9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AB9E119F6590E00F1BBEB /* sound-3.mp3 in Resources */,
+				79E079DC19CD7CC7006FF862 /* AddSubtractViewController.xib in Resources */,
+				791CC5F819C8316B009AAE9B /* Main.storyboard in Resources */,
+				79B8787019F221F20097AF05 /* RulerQuestions.plist in Resources */,
+				790AB9E319F6590E00F1BBEB /* sound-5.mp3 in Resources */,
+				79E9C1581A14B7B900AD53CA /* wrong.mp3 in Resources */,
+				7946E68619F9F11300DC223A /* re.mp3 in Resources */,
+				790AB9E019F6590E00F1BBEB /* sound-2.mp3 in Resources */,
+				7946E68819F9F11300DC223A /* ti.mp3 in Resources */,
+				79AF3CAE19DE9CAC00DAA103 /* FractionQuestions.plist in Resources */,
+				79EC043419DFDA80001465B2 /* AlgebraQuestions.plist in Resources */,
+				79F0E8BC1A09D3F9008AE8C0 /* hooray.mp3 in Resources */,
+				7946E68419F9F11300DC223A /* la.mp3 in Resources */,
+				791CC5FD19C8316B009AAE9B /* LaunchScreen.xib in Resources */,
+				7946E68519F9F11300DC223A /* mi.mp3 in Resources */,
+				790AB9E219F6590E00F1BBEB /* sound-4.mp3 in Resources */,
+				79EC043219DFC061001465B2 /* LongCalcQuestions.plist in Resources */,
+				791CC5FA19C8316B009AAE9B /* Images.xcassets in Resources */,
+				790AB9DF19F6590E00F1BBEB /* sound-1.mp3 in Resources */,
+				7946E68719F9F11300DC223A /* so.mp3 in Resources */,
+				79E079E019CD8022006FF862 /* MultiplyViewController.xib in Resources */,
+				791CC61519C84F25009AAE9B /* CustomKeyboard.xib in Resources */,
+				7946E68319F9F11300DC223A /* fa.mp3 in Resources */,
+				79E079E419CD8034006FF862 /* DivideViewController.xib in Resources */,
+				7946E68219F9F11300DC223A /* do.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		791CC60019C8316B009AAE9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		791CC5E919C8316A009AAE9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7939110B19CA9FDF00F55520 /* LongCalcViewController.swift in Sources */,
+				791CC61319C83443009AAE9B /* FractionViewController.swift in Sources */,
+				798F9A4C19DEBDF400B401CF /* SettingsViewController.swift in Sources */,
+				7939110919CA9BF700F55520 /* AppUtil.swift in Sources */,
+				791CC5F519C8316B009AAE9B /* MainViewController.swift in Sources */,
+				791CC5F319C8316B009AAE9B /* AppDelegate.swift in Sources */,
+				791CC61719C85023009AAE9B /* CustomKeyboard.swift in Sources */,
+				79E079DF19CD8022006FF862 /* MultiplyViewController.swift in Sources */,
+				79E079E319CD8034006FF862 /* DivideViewController.swift in Sources */,
+				793B4E0419E3F5400089A344 /* RulerViewController.swift in Sources */,
+				793C7FCB19F3EDDE00D63C75 /* AppConstants.swift in Sources */,
+				79A6694F1A8622E700403D77 /* HelpViewController.swift in Sources */,
+				793005AE1A10A00100BD9A3E /* AppSettingsViewController.swift in Sources */,
+				79B664C41AB4251000F4F3F0 /* TutorialViewController.swift in Sources */,
+				79E079DB19CD7CC7006FF862 /* AddSubtractViewController.swift in Sources */,
+				79147F0019D1A8AA00E31B1D /* AlgebraViewController.swift in Sources */,
+				7944A89D1A47E535008E6DCC /* ContactViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		791CC5FE19C8316B009AAE9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791CC60919C8316B009AAE9B /* Math_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		791CC60419C8316B009AAE9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791CC5EC19C8316A009AAE9B /* Math Game */;
+			targetProxy = 791CC60319C8316B009AAE9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		791CC5F619C8316B009AAE9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				791CC5F719C8316B009AAE9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		791CC5FB19C8316B009AAE9B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				791CC5FC19C8316B009AAE9B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		791CC60A19C8316B009AAE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		791CC60B19C8316B009AAE9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		791CC60D19C8316B009AAE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Richard Chui (U889ZP5C7P)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Math Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "84b7e448-77e7-48a9-b4a5-94aa1bd34b36";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		791CC60E19C8316B009AAE9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ebenezer school (62D34P2E98)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ebenezer school (62D34P2E98)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Math Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bf6282e8-30e2-48c2-9afd-266cb1f3b426";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		791CC61019C8316B009AAE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Math GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Math Game.app/Math Game";
+			};
+			name = Debug;
+		};
+		791CC61119C8316B009AAE9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Math GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Math Game.app/Math Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		791CC5E819C8316A009AAE9B /* Build configuration list for PBXProject "Math Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791CC60A19C8316B009AAE9B /* Debug */,
+				791CC60B19C8316B009AAE9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		791CC60C19C8316B009AAE9B /* Build configuration list for PBXNativeTarget "Math Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791CC60D19C8316B009AAE9B /* Debug */,
+				791CC60E19C8316B009AAE9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		791CC60F19C8316B009AAE9B /* Build configuration list for PBXNativeTarget "Math GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791CC61019C8316B009AAE9B /* Debug */,
+				791CC61119C8316B009AAE9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 791CC5E519C8316A009AAE9B /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B9ADB84F-B9BA-4803-8978-158BA6213B12</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Math Game</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>844F39E97759B100749645D2D8F3C93809211968</key>
+		<string>https://bitbucket.org/oem/ebenezer-math-game.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Math Game.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>844F39E97759B100749645D2D8F3C93809211968</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/oem/ebenezer-math-game.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>844F39E97759B100749645D2D8F3C93809211968</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>844F39E97759B100749645D2D8F3C93809211968</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Math%20Game</string>
+		</dict>
+	</array>
+</dict>
+</plist>

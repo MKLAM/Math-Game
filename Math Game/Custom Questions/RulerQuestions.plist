@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Operation</key>
+		<string>COMPARE-BIG</string>
+		<key>Selected</key>
+		<false/>
+		<key>Numbers</key>
+		<array>
+			<integer>-10</integer>
+			<integer>1</integer>
+			<integer>4</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>COMPARE-MIDDLE</string>
+		<key>Selected</key>
+		<true/>
+		<key>Numbers</key>
+		<array>
+			<integer>9</integer>
+			<integer>12</integer>
+			<integer>34</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>2 加 10 等如幾多呀？</string>
+		<key>Selected</key>
+		<true/>
+		<key>Numbers</key>
+		<array>
+			<integer>12</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>2 乘 10 等如幾多呀？</string>
+		<key>Selected</key>
+		<false/>
+		<key>Numbers</key>
+		<array>
+			<integer>20</integer>
+		</array>
+	</dict>
+</array>
+</plist>

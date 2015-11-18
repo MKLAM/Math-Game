@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Operation</key>
+		<string>BALANCE</string>
+		<key>Selected</key>
+		<true/>
+		<key>Numbers</key>
+		<array>
+			<string>12</string>
+			<string>34x</string>
+			<string>3x</string>
+			<string>-16</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>DIRECT</string>
+		<key>Selected</key>
+		<false/>
+		<key>Numbers</key>
+		<array>
+			<string>2x</string>
+			<string></string>
+			<string>3</string>
+			<string>-10x</string>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Operation</key>
+		<string>MULTIPLY</string>
+		<key>Selected</key>
+		<true/>
+		<key>Numbers</key>
+		<array>
+			<integer>2</integer>
+			<integer>4</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>ADD</string>
+		<key>Selected</key>
+		<false/>
+		<key>Numbers</key>
+		<array>
+			<integer>12</integer>
+			<integer>34</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>SUBTRACT</string>
+		<key>Selected</key>
+		<true/>
+		<key>Numbers</key>
+		<array>
+			<integer>99</integer>
+			<integer>5</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>Operation</key>
+		<string>DIVIDE</string>
+		<key>Selected</key>
+		<false/>
+		<key>Numbers</key>
+		<array>
+			<integer>13</integer>
+			<integer>199</integer>
+		</array>
+	</dict>
+</array>
+</plist>

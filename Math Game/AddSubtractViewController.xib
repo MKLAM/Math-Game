@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddSubtractViewController" customModule="Math_Game" customModuleProvider="target">
+            <connections>
+                <outlet property="advance100Switch" destination="ziG-yh-mN1" id="ezl-40-v1N"/>
+                <outlet property="advance10Switch" destination="xsh-I0-bWl" id="mom-jQ-g5B"/>
+                <outlet property="advance1Switch" destination="29s-h0-QJK" id="RFd-k9-DWh"/>
+                <outlet property="completeImage" destination="kPZ-U5-7rq" id="ESm-2v-rpd"/>
+                <outlet property="gridImage" destination="Yyv-lt-jkr" id="F1u-NO-lvz"/>
+                <outlet property="opImage" destination="aYd-Sj-0ks" id="2M4-fV-TbV"/>
+                <outlet property="questionLabel" destination="YBF-xe-QER" id="odI-fJ-i3s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomUIView" customModule="Math_Game" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="835" height="688"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-lt-jkr">
+                    <rect key="frame" x="-293" y="-77" width="1412" height="767"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZN-qi-lyx">
+                    <rect key="frame" x="530" y="462" width="70" height="70"/>
+                    <accessibility key="accessibilityConfiguration" label="個位"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Abt-FA-6g5"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4P-lH-vhV">
+                    <rect key="frame" x="380" y="462" width="70" height="70"/>
+                    <accessibility key="accessibilityConfiguration" label="百位"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bym-ja-0MV"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0iG-0C-YUO">
+                    <rect key="frame" x="305" y="462" width="70" height="70"/>
+                    <accessibility key="accessibilityConfiguration" label="千位"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="vdr-Rr-MOS"/>
+                    </connections>
+                </textField>
+                <switch opaque="NO" tag="32" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-I0-bWl">
+                    <rect key="frame" x="393" y="406" width="51" height="31"/>
+                    <accessibility key="accessibilityConfiguration" label="十位進位"/>
+                    <connections>
+                        <action selector="carryBtnClicked:" destination="-1" eventType="valueChanged" id="EUr-8Y-itK"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" tag="33" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ziG-yh-mN1">
+                    <rect key="frame" x="318" y="406" width="51" height="31"/>
+                    <accessibility key="accessibilityConfiguration" label="百位進位">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <connections>
+                        <action selector="carryBtnClicked:" destination="-1" eventType="valueChanged" id="sdQ-jf-LSl"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="29s-h0-QJK">
+                    <rect key="frame" x="468" y="406" width="51" height="31"/>
+                    <accessibility key="accessibilityConfiguration" label="個位進位"/>
+                    <connections>
+                        <action selector="carryBtnClicked:" destination="-1" eventType="valueChanged" id="TVu-Wq-D9B"/>
+                    </connections>
+                </switch>
+                <textField opaque="NO" clipsSubviews="YES" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mer-A7-cz0">
+                    <rect key="frame" x="455" y="462" width="70" height="70"/>
+                    <accessibility key="accessibilityConfiguration" label="十位"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jPR-qY-Ldg"/>
+                    </connections>
+                </textField>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-U5-7rq">
+                    <rect key="frame" x="8" y="95" width="174" height="124"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                    </accessibility>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="op-add" translatesAutoresizingMaskIntoConstraints="NO" id="aYd-Sj-0ks">
+                    <rect key="frame" x="232" y="236" width="70" height="70"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsu-BY-lQm">
+                    <rect key="frame" x="533" y="159" width="70" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3i-s4-l3G">
+                    <rect key="frame" x="458" y="159" width="70" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMf-hm-26g">
+                    <rect key="frame" x="384" y="159" width="70" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDW-KO-UQK">
+                    <rect key="frame" x="534" y="236" width="70" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-ei-oLl">
+                    <rect key="frame" x="458" y="236" width="70" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTE-me-NKZ">
+                    <rect key="frame" x="384" y="236" width="70" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBF-xe-QER">
+                    <rect key="frame" x="304" y="1" width="225" height="80"/>
+                    <accessibility key="accessibilityConfiguration" label="what is the question?"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="iMl-FV-YMe">
+                    <rect key="frame" x="228" y="333" width="378" height="25"/>
+                    <accessibility key="accessibilityConfiguration" label="橫線">
+                        <accessibilityTraits key="traits" none="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="216.5" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" width="22" height="17"/>
+        <image name="divider" width="100" height="40"/>
+        <image name="grid" width="570" height="442"/>
+        <image name="op-add" width="100" height="100"/>
+    </resources>
+</document>
